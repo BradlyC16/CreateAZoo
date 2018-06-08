@@ -4,10 +4,10 @@ public class Items {
 
     private double price;
     private String itemName;
-    private String quantity;
+    private int quantity;
     private int dateRecevived;
 
-    public Items(double price, String itemName, String quantity, int dateRecevived) {
+    public Items(double price, String itemName, int quantity, int dateRecevived) {
         this.price = price;
         this.itemName = itemName;
         this.quantity = quantity;
@@ -30,11 +30,11 @@ public class Items {
         this.itemName = itemName;
     }
 
-    public String getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 

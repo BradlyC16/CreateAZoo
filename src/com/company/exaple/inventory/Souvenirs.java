@@ -5,7 +5,7 @@ public class Souvenirs extends Items{
     private String type;
     private int idNumber;
 
-    public Souvenirs(double price, String itemName, String quantity, int dateRecevived, String type, int idNumber) {
+    public Souvenirs(double price, String itemName, int quantity, int dateRecevived, String type, int idNumber) {
         super(price, itemName, quantity, dateRecevived);
         this.type = type;
         this.idNumber = idNumber;

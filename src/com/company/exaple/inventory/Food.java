@@ -6,7 +6,7 @@ public class Food extends Items{
     private int exprationDate;
     private boolean refridgerated;
 
-    public Food(double price, String itemName, String quantity, int dateRecevived, String catigory, int exprationDate, boolean refridgerated) {
+    public Food(double price, String itemName, int quantity, int dateRecevived, String catigory, int exprationDate, boolean refridgerated) {
         super(price, itemName, quantity, dateRecevived);
         this.catigory = catigory;
         this.exprationDate = exprationDate;
