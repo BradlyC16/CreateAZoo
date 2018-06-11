@@ -169,6 +169,8 @@ public class PeopleMenu {
 
             Employee newEmployee = new Employee(employeeAge, employeeName, employeeGender, employeeRace, employeeNumber, employeeJob, employeeHire, employeeHours);
 
+//            TODO Add Employee to Employee List
+
         } else if (location == 2) {
 
 

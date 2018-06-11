@@ -14,6 +14,9 @@ public class People {
         this.race = race;
     }
 
+    public People() {
+    }
+
     public int getAge() {
         return age;
     }
