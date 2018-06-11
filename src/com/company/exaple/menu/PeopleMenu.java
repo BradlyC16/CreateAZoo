@@ -1,5 +1,7 @@
 package com.company.exaple.menu;
 
+import com.company.exaple.people.Employee;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -64,6 +66,7 @@ public class PeopleMenu {
             switch (input.nextInt()) {
                 case 1:
 //              Create new Employee
+                    createPerson(1);
                     break;
                 case 2:
 //              View All Employees
@@ -107,6 +110,7 @@ public class PeopleMenu {
             switch (input.nextInt()) {
                 case 1:
 //              Create new Visitor
+                    createPerson(2);
                     break;
                 case 2:
 //              View All Visitor
@@ -136,4 +140,40 @@ public class PeopleMenu {
             manageVisitor();
         }
     }
+
+    private void createPerson(int location) {
+
+
+//        If location == 1, new Employee, if location ==2, new Visitor
+        if (location == 1) {
+
+            System.out.println("What is the employee's age?");
+            int employeeAge = input.nextInt();
+            input.nextLine();
+            System.out.println("What is the employee's name?");
+            String employeeName = input.nextLine();
+            System.out.println("What gender is the employee?");
+            char employeeGender = input.nextLine().charAt(0);
+            System.out.println("What is the employee's race?");
+            String employeeRace = input.nextLine();
+            System.out.println("What is the employee's id number?");
+            int employeeNumber = input.nextInt();
+            input.nextLine();
+            System.out.println("What jod does the employee have?");
+            String employeeJob = input.nextLine();
+            System.out.println("What was the employee's hire date?");
+            String employeeHire = input.nextLine();
+            System.out.println("How many hours does the employee have?");
+            int employeeHours = input.nextInt();
+            input.nextLine();
+
+            Employee newEmployee = new Employee(employeeAge, employeeName, employeeGender, employeeRace, employeeNumber, employeeJob, employeeHire, employeeHours);
+
+        } else if (location == 2) {
+
+
+        }
+
+    }
+
 }

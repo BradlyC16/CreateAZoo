@@ -5,9 +5,9 @@ public class People {
     private int age;
     private String name;
     private char gender;
-    private char race;
+    private String race;
 
-    public People(int age, String name, char gender, char race) {
+    public People(int age, String name, char gender, String race) {
         this.age = age;
         this.name = name;
         this.gender = gender;
@@ -34,7 +34,7 @@ public class People {
         this.gender = gender;
     }
 
-    public char getRace() {
+    public String getRace() {
         return race;
     }
 }
